@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(./wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 40%;
+    transform: translate(-50%,-50%);
+    border: 3px black solid;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+    backdrop-filter: blur(3px);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+    color: white;
+    text-decoration: underline;
+}
+
+.heading-2{
+    display: flex;
+    color: white;
+    margin-top: 0px;
+    justify-content: center;
+}
+.sign-up{
+    color: rgb(30, 199, 106);
+    cursor: pointer;
+}
+.sign-up:hover{
+    text-decoration: underline;
+}
+
+.sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100% - 170px);
+}
+
+.left{
+    padding-left: 6px;
+    margin-bottom: 0px;
+    opacity: 0.8;
+    background-color: rgb(198, 234, 234);
+    font-weight: bolder;
+    border: 2px solid black;
+}
+.remember-me{
+    display: grid;
+    grid-template-columns: 0.09fr 1fr;
+}
+.forget-pw{
+    margin-top: 0px;
+    padding-top: 0px;
+    color: blue;
+}
+.forget-pw:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgb(197, 232, 220);
+    border: 2px solid black;
+    color: rgb(14, 2, 2);
+    padding: 10px;
+    opacity: 0.8;
+}
+.social-login{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 87%;    
+}
+.images{
+    height: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.images:hover{
+    box-shadow: 0 0 10px 1px rgb(75, 67, 67);
+    background-color:transparent;
+    cursor: pointer;
+}
+.images-text{
+    height: 30px;
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 4px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.images-text:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+.social-login{
+    font-size: 1px;
+}
+
+.login-button{
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    height: 38px;
+    width: 120px;
+    text-align: center;
+    justify-self: center;
+    border-radius: 8px;
+    color: black;
+    margin-top: 3px;
+    font-weight: bold;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+    background-color: #86bed4
+}
+.login:hover{
+    cursor: pointer;
+    background-color: rgb(81, 145, 168);
+    box-shadow: 0 0 10px rgba(253, 255, 253, 0.8);
+}
+
+@media (max-width: 890px) {
+    .login-form{
+        width: 90%;
+        height: auto;
+    }
+    .sections{
+        grid-template-columns: 1fr;
+    }
+    .right{
+        margin-top: 20px;
+    }
+    .social-login{
+        width: 100%;
+    }
+    .images-text{
+        width: 100%;
+        padding-top: 0px;
+    }
+}
+
+@media (min-width:250px) and (max-width:480px) {
+    .heading{
+        font-size: 1.5rem;
+    }
+    .heading-2{
+        font-size: 0.9rem;
+    }
+    .login{
+        width: 100%;
+    }
+    
+}
